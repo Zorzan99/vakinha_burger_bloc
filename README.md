@@ -1,16 +1,9 @@
 # vakinha_burger
 
-A new Flutter project.
+Ola, me chamo Gabriel Zorzan e sou dev flutter poe 3 anos.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Esse app se trata de um app de restaurante estilo ifood, onde tem tem consumo de api, token, refresh token dentre muitas coisas bacanas.
+Utilizei o bloc com provider para gerência de estado
+Dio para consumo de api
+Foi utilizado bastante packages legais, mas todos funcionais. 
+Espero que gostem
