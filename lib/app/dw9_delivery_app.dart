@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:vakinha_burger/app/core/global/global_context.dart';
 import 'package:vakinha_burger/app/core/provider/application_binding.dart';
 import 'package:vakinha_burger/app/core/ui/theme/theme_config.dart';
 import 'package:vakinha_burger/app/pages/auth/login/login_router.dart';
 import 'package:vakinha_burger/app/pages/home/home_router.dart';
+import 'package:vakinha_burger/app/pages/order/order_completed_page.dart';
 import 'package:vakinha_burger/app/pages/order/order_router.dart';
 import 'package:vakinha_burger/app/pages/product_detail/product_detail_router.dart';
 import 'package:vakinha_burger/app/pages/register/register_router.dart';
 import 'package:vakinha_burger/app/pages/splash/splash_page.dart';
 
 class Dw9DeliveryApp extends StatelessWidget {
-  const Dw9DeliveryApp({super.key});
+  final _navKey = GlobalKey<NavigatorState>();
+  Dw9DeliveryApp({super.key}) {
+    GlobalContext.i.navigatorKey = _navKey;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +22,7 @@ class Dw9DeliveryApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Delivery App',
         theme: ThemeConfig.theme,
+        navigatorKey: _navKey,
         routes: {
           '/': (context) => const SplashPage(),
           '/home': (context) => HomeRouter.page,
@@ -24,6 +30,7 @@ class Dw9DeliveryApp extends StatelessWidget {
           '/auth/login': (context) => LoginRouter.page,
           '/auth/register': (context) => RegisterRouter.page,
           '/order': (context) => OrderRouter.page,
+          '/order/completed': (context) => const OrderCompletedPage()
         },
       ),
     );
