@@ -6,4 +6,4 @@ Esse app se trata de um app de restaurante estilo ifood, onde tem tem consumo de
 Utilizei o bloc com provider para gerência de estado
 Dio para consumo de api
 Foi utilizado bastante packages legais, mas todos funcionais. 
-Espero que gostem
+Espero que gostem.
